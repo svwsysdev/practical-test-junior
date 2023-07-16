@@ -8,13 +8,13 @@
   <thead>
     <tr>
       <th>Name</th>
-      <tg>Date of Birth</tg>
+      <th>Date of Birth</th>
       <th>Gender</th>
-      <tg>Starships</tg>
+      <th>Starships</th>
 </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let persons of people">
+    <tr *ngFor="let person of people">
       <td>{{ person.name }}</td>
       <td>{{ person.birth_year }}</td>
       <td>{{ person.gender }}</td>
