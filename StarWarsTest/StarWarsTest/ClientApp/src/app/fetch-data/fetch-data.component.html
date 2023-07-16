@@ -1,0 +1,26 @@
+<h1 id="tableLabel">Characters</h1>
+
+<p>Displays characters and starships</p>
+
+<p *ngIf="!people"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="people">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <tg>Date of Birth</tg>
+      <th>Gender</th>
+      <tg>Starships</tg>
+</tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persons of people">
+      <td>{{ person.name }}</td>
+      <td>{{ person.birth_year }}</td>
+      <td>{{ person.gender }}</td>
+      <td>{{ person.starships }}</td>
+
+
+    </tr>
+  </tbody>
+</table>
